@@ -370,7 +370,7 @@ public class BrowserUtils {
      * @param by
      * @param time
      */
-    public static void waitForPresenceOfElement(By by, long time) {
+    public static void waitForPresenceOfElement(By by, Duration time) {
         new WebDriverWait(Driver.get(), time).until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
