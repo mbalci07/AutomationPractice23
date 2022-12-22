@@ -1,4 +1,4 @@
-package com.demo23.step_definitions;
+package com.demo23.stepDefinitions;
 
 import com.demo23.utilities.BrowserUtils;
 import com.demo23.utilities.ConfigurationReader;
