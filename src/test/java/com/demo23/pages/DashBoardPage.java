@@ -7,6 +7,9 @@ public class DashBoardPage extends BasePage {
     @FindBy(xpath = "//*[@id='app']/header/a")
     private WebElement mainPageSymbol;
 
+    @FindBy(xpath = "//div[2]/div/div[2]/div/div[3]")
+    private WebElement formsPageSymbol;
+
 
 
     public boolean VerifyDashboard(){
