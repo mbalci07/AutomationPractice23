@@ -7,9 +7,13 @@ public class DashBoardPage extends BasePage {
     @FindBy(xpath = "//*[@id='app']/header/a")
     private WebElement mainPageSymbol;
 
+    @FindBy(xpath = "//img[@alt='Selenium Online Training']")
+    public WebElement seleniumOnlineTraining;
 
+    @FindBy(xpath = "//span[text() ='Tutorials']")
+    public WebElement tutorials;
 
-    public boolean VerifyDashboard(){
+    public boolean VerifyDashboard() {
         return mainPageSymbol.isDisplayed();
     }
 }

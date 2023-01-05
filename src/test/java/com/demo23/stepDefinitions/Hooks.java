@@ -10,19 +10,18 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
     @Before
-    public void setUp(){
+    public void setUp() {
 
         Driver.get().manage().window().maximize();
     }
-    @After
-    public void tearDown(Scenario scenario){
-        if (scenario.isFailed()){
-            final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot,"image/png");
 
+    @After
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+            final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot, "image/png");
         }
 
-       Driver.closeDriver();
+        Driver.closeDriver();
     }
-
 }
