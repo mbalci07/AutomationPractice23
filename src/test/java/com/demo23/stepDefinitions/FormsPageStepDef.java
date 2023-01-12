@@ -35,8 +35,6 @@ public class FormsPageStepDef extends BasePage {
             BrowserUtils.waitFor(3);
             Assert.assertEquals("Verify Title","Forms",dashBoardPage.getFormsTitle());
         }
-
-
     }
 
 
